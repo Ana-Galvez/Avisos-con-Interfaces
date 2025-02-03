@@ -21,12 +21,12 @@ namespace Avisos_con_Interfaces
             this.mensaje = mensaje;
             this.fecha = fecha;
         }
-        string IAvisos.getFecha()
+        public string getFecha()
         {
             return fecha;
         }
 
-        void IAvisos.MensajeAviso()
+        public void MensajeAviso()
         {
             Console.WriteLine($"Mensaje {mensaje} ha sido enviado por {remitente} el día {fecha}");
             //Console.WriteLine("Mensaje {0} ha sido enviado por {1} el día {2}",mensaje,remitente,fecha);
